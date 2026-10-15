@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareImpact AI</title>
+  <meta name="description" content="Compare versions of Medicare coverage policies and see what changed, with evidence.">
+  <meta name="theme-color" content="#0b1f44">
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/chatbot.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <aside class="sidebar" id="sidebar" aria-label="Primary">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M9 16h4l2-5 3 10 2-5h3"/></svg>
+      <div>
+        <div class="brand-name">CareImpact <span>AI</span></div>
+        <div class="brand-tag">Healthcare policy. Translated into action.</div>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-group">Analyze</div>
+      <ul class="nav">
+        <li><a href="#dashboard" data-page="dashboard"><svg viewBox="0 0 24 24"><path d="M4 13h6V4H4zm10 7h6V11h-6zM4 20h6v-4H4zm10-16v4h6V4z"/></svg>Home</a></li>
+        <li><a href="#compare" data-page="compare"><svg viewBox="0 0 24 24"><path d="M8 4v16M16 4v16M4 8h4M16 16h4M4 16h4M16 8h4"/></svg>Compare Policies</a></li>
+        <li><a href="#library" data-page="library"><svg viewBox="0 0 24 24"><path d="M5 4h4v16H5zM11 4h4v16h-4zM17 5l3 1-3 14-3-1z"/></svg>Policy Library</a></li>
+      </ul>
+      <div class="nav-group">Model</div>
+      <ul class="nav">
+        <li><a href="#dataset" data-page="dataset"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>Dataset &amp; Training</a></li>
+        <li><a href="#benchmarks" data-page="benchmarks"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Model Benchmarking</a></li>
+      </ul>
+      <div class="nav-group">Help</div>
+      <ul class="nav">
+        <li><a href="#about" data-page="about"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>Help &amp; Responsible Use</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot"><strong>Always verify</strong>Not official CMS guidance. Check every finding against the source policy.</div>
+  </aside>
+  <div class="scrim" id="scrim" aria-hidden="true"></div>
+
+  <div class="main-col">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="title-block">
+        <h1 id="pageTitle">Home</h1>
+        <div class="page-sub" id="pageSub"></div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- HOME -->
+      <section class="page" id="page-dashboard" hidden>
+        <div class="hero">
+          <h2>See exactly what changed in a Medicare policy.</h2>
+          <p>Pick two versions of a coverage policy. CareImpact AI lines them up section by section, explains each change in plain language and shows the exact text it is based on.</p>
+          <div class="actions">
+            <button class="btn primary big" id="trySample">Try a sample comparison</button>
+            <a class="btn ghost big" href="#compare">Compare my own policies</a>
+          </div>
+        </div>
+
+        <div class="grid quick">
+          <a class="card quick-card" href="#library">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 4h4v16H5zM11 4h4v16h-4zM17 5l3 1-3 14-3-1z"/></svg></span>
+            <span><h3>Browse the library</h3><p>Ready-made sample pairs and real CMS policies.</p></span>
+          </a>
+          <a class="card quick-card" href="#compare">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M8 4v16M16 4v16M4 8h4M16 16h4M4 16h4M16 8h4"/></svg></span>
+            <span><h3>Compare policies</h3><p>Use saved documents, a CMS link or pasted text.</p></span>
+          </a>
+          <button type="button" class="card quick-card" id="askQuick">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+            <span><h3>Ask the assistant</h3><p>Questions about the app or your result? Just ask.</p></span>
+          </button>
+        </div>
+
+        <div class="grid kpis" id="dashKpis"></div>
+        <div class="grid two">
+          <div class="card">
+            <h2>How it works</h2>
+            <ol class="steps">
+              <li><span>Choose an <strong>old</strong> and a <strong>new</strong> version of a policy, from the <a href="#library">Policy Library</a>, an official CMS link, or pasted text.</span></li>
+              <li><span>A deterministic diff finds every section that changed, then the AI model classifies each change.</span></li>
+              <li><span>Every quote is checked against the source text. Anything not found is clearly flagged.</span></li>
+              <li><span>Confirm each finding in the side-by-side diff before you act on it.</span></li>
+            </ol>
+            <a class="btn primary" href="#compare">Start comparing</a>
+          </div>
+          <div class="card">
+            <h2>Latest benchmark results</h2>
+            <div id="dashBench"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPARE -->
+      <section class="page" id="page-compare" hidden>
+        <div class="card compare-intro">
+          <p>Choose the two versions you want to compare. Not sure where to start?</p>
+          <div>
+            <button class="btn small" id="loadSample">Load a sample pair</button>
+            <button class="btn small" id="swapSides" title="Swap old and new"><svg viewBox="0 0 24 24"><path d="M7 7h13l-4-4M17 17H4l4 4"/></svg>Swap</button>
+            <button class="btn small" id="clearAll">Clear</button>
+          </div>
+        </div>
+        <div class="grid two compare-inputs">
+          <div class="card panel" data-side="old">
+            <div class="panel-head"><span class="panel-title"><span class="step-num">1</span>Old version</span><span class="side-tag old">before</span></div>
+            <div class="tabs" role="tablist" aria-label="Old version source">
+              <button role="tab" data-mode="saved" aria-selected="true">Saved</button>
+              <button role="tab" data-mode="url" aria-selected="false">CMS link</button>
+              <button role="tab" data-mode="text" aria-selected="false">Paste text</button>
+            </div>
+            <div class="src src-saved"><label>Saved document<select class="doc-select"></select></label></div>
+            <div class="src src-url" hidden><label>Version-specific Medicare Coverage Database URL<input type="url" class="url-input" placeholder="https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=33912&ver=16"></label><span class="hint">Only official cms.gov links are accepted. Include the <code>ver=</code> number.</span></div>
+            <div class="src src-text" hidden><label>Policy text<textarea class="text-input" rows="9" placeholder="Paste policy text. Put each heading on its own line (or start it with ## )."></textarea></label><span class="hint">Pasted text is marked as unverified.</span></div>
+            <dl class="meta"></dl>
+          </div>
+          <div class="card panel" data-side="new">
+            <div class="panel-head"><span class="panel-title"><span class="step-num">2</span>New version</span><span class="side-tag new">after</span></div>
+            <div class="tabs" role="tablist" aria-label="New version source">
+              <button role="tab" data-mode="saved" aria-selected="true">Saved</button>
+              <button role="tab" data-mode="url" aria-selected="false">CMS link</button>
+              <button role="tab" data-mode="text" aria-selected="false">Paste text</button>
+            </div>
+            <div class="src src-saved"><label>Saved document<select class="doc-select"></select></label></div>
+            <div class="src src-url" hidden><label>Version-specific Medicare Coverage Database URL<input type="url" class="url-input" placeholder="https://www.cms.gov/medicare-coverage-database/view/lcd.aspx?lcdid=33912&ver=26"></label><span class="hint">Only official cms.gov links are accepted. Include the <code>ver=</code> number.</span></div>
+            <div class="src src-text" hidden><label>Policy text<textarea class="text-input" rows="9" placeholder="Paste policy text."></textarea></label><span class="hint">Pasted text is marked as unverified.</span></div>
+            <dl class="meta"></dl>
+          </div>
+        </div>
+        <div class="action-bar card">
+          <div class="left">
+            <span class="step-num">3</span>
+            <label class="inline">Analyzer
+              <select id="modelSelect"></select>
+            </label>
+            <span class="hint" id="modelHint" aria-live="polite"></span>
+          </div>
+          <button class="btn primary big" id="compareBtn">Compare Policies</button>
+        </div>
+        <div id="results" aria-live="polite"></div>
+      </section>
+
+      <!-- LIBRARY -->
+      <section class="page" id="page-library" hidden>
+        <div class="card">
+          <div class="card-head"><h2>Policy version pairs</h2>
+            <div class="filters"><label class="inline">Show
+              <select id="libFilter"><option value="all">All</option><option value="sample">Synthetic samples</option><option value="real">Real CMS pairs</option></select></label></div>
+          </div>
+          <p class="card-intro">Press <strong>Compare</strong> on any row to open it side by side. Synthetic samples are fictional and safe to experiment with.</p>
+          <div id="libTable"></div>
+        </div>
+      </section>
+
+      <!-- DATASET -->
+      <section class="page" id="page-dataset" hidden>
+        <div class="grid kpis" id="dataKpis"></div>
+        <div class="grid two">
+          <div class="card"><h2>Synthetic training examples by scenario</h2><p class="card-intro">Train split, counts after validation and deduplication.</p><div id="scenarioBars"></div></div>
+          <div class="card"><h2>Target classification balance</h2><p class="card-intro">Train split.</p><div id="classBars"></div></div>
+        </div>
+        <div class="card"><h2>Training runs</h2><div id="runs"></div></div>
+      </section>
+
+      <!-- BENCHMARKS -->
+      <section class="page" id="page-benchmarks" hidden>
+        <div class="notice"><strong>How to read this.</strong> Synthetic and real evaluation results are kept separate. Synthetic scores measure behaviour on fictional held-out policy families and are not evidence of real-world policy accuracy. ★ marks the best value in each row.</div>
+        <div id="benchTables"></div>
+        <div class="card"><div class="card-head"><h2>Example failures</h2>
+          <div class="filters"><label class="inline">Model <select id="failModel"></select></label></div></div>
+          <div id="failures"></div></div>
+      </section>
+
+      <!-- HELP / ABOUT -->
+      <section class="page" id="page-about" hidden>
+        <div class="grid two">
+          <div class="card prose-card">
+            <h2>What CareImpact AI does</h2>
+            <p>CareImpact AI compares two versions of a Medicare coverage policy (LCD), finds the sections that changed with a deterministic diff, and asks a small language model to classify each change and draft operational implications.</p>
+            <p>Every evidence quote is checked against the supplied source text. Quotes that cannot be found are flagged as unsupported.</p>
+          </div>
+          <div class="card prose-card">
+            <h2>Responsible use</h2>
+            <ul>
+              <li>Generated analysis is not official CMS guidance or legal/compliance advice.</li>
+              <li>Synthetic samples are fictional and labelled as such; they never describe a real LCD.</li>
+              <li>Unverified version pairs are never presented as confirmed policy changes.</li>
+              <li>Confidence labels are qualitative and not calibrated probabilities.</li>
+              <li>No patient-identifiable data is used or stored.</li>
+              <li>CPT codes are subject to AMA license terms; the collector does not accept license terms on your behalf.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card faq">
+          <h2>Frequently asked questions</h2>
+          <details><summary>How do I run my first comparison?</summary><p>Click <strong>Try a sample comparison</strong> on the Home page, or open the <a href="#library">Policy Library</a> and press <strong>Compare</strong> on any row.</p></details>
+          <details><summary>What does "verified" mean?</summary><p>The CMS page's document ID, version and title matched what was requested and real policy content was extracted. Unverified pairs are never shown as confirmed changes.</p></details>
+          <details><summary>Why does it say "baseline only"?</summary><p>The local AI server (Ollama) is not running or the model is not installed, so the app uses the rule-based diff baseline. Install Ollama and run <code>ollama pull qwen2.5:1.5b</code> to enable model analysis.</p></details>
+          <details><summary>What does "not found in source" mean?</summary><p>The quote could not be matched to the policy text. The model may have paraphrased or invented it, so check that finding by hand.</p></details>
+          <details><summary>Can I use my own policy text?</summary><p>Yes. Use the <strong>Paste text</strong> tab. Put each heading on its own line so the text is split into sections.</p></details>
+          <details><summary>Is my data stored anywhere?</summary><p>No. Pasted text is processed in memory for the comparison and is not saved. The assistant's conversation lives only in your browser tab.</p></details>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+<script src="/static/chatbot.js"></script>
+</body>
+</html>

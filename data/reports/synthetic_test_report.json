@@ -1,0 +1,60 @@
+{
+  "split": "test",
+  "generator_version": "synth-1.0",
+  "seed": 9,
+  "requested": 240,
+  "accepted": 240,
+  "attempts": 241,
+  "failed_checks": 0,
+  "generator_errors": 0,
+  "duplicates_exact": 0,
+  "duplicates_near": 1,
+  "families": [
+    "bone_density",
+    "hyperbaric_oxygen",
+    "tms"
+  ],
+  "by_scenario": {
+    "added_documentation": 11,
+    "administrative_edit": 10,
+    "ambiguous_evidence": 22,
+    "billing_article_reference": 11,
+    "billing_instructions": 11,
+    "diagnosis_codes": 11,
+    "effective_date_revision": 11,
+    "evidence_requirements": 10,
+    "expanded_eligibility": 11,
+    "narrowed_eligibility": 11,
+    "new_coverage_indication": 11,
+    "new_limitation": 11,
+    "no_substantive_change": 22,
+    "provider_qualifications": 11,
+    "removed_coverage_indication": 11,
+    "removed_documentation": 11,
+    "retirement_replacement": 11,
+    "supervision_requirements": 11,
+    "threshold_change": 11,
+    "treatment_duration": 11
+  },
+  "by_family": {
+    "bone_density": 77,
+    "hyperbaric_oxygen": 61,
+    "tms": 102
+  },
+  "by_classification": {
+    "administrative": 23,
+    "clinical_criteria": 43,
+    "coding_billing": 36,
+    "coverage": 44,
+    "documentation": 28,
+    "insufficient_evidence": 12,
+    "no_substantive_change": 22,
+    "provider_requirements": 21,
+    "retirement_replacement": 11
+  },
+  "substantive": 183,
+  "abstain": 12,
+  "multi_finding": 59,
+  "output": "C:\\Users\\krish\\OneDrive\\Desktop\\careimpact\\data\\evaluation\\synthetic_test.jsonl",
+  "failed_output": "C:\\Users\\krish\\OneDrive\\Desktop\\careimpact\\data\\training\\review\\synthetic_test_failed.jsonl"
+}

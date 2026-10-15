@@ -1,0 +1,27 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+device: cuda
+dtype: float16
+epochs: 2
+eval_every: 25
+grad_accum: 8
+gradient_checkpointing: true
+learning_rate: 0.0002
+limit_val: 60
+lora_alpha: 32
+lora_dropout: 0.05
+lora_r: 16
+max_seq_len: 2048
+output_dir: models/runs/colab_1p5b_lora
+save_every: 50
+seed: 13
+target_modules:
+- q_proj
+- k_proj
+- v_proj
+- o_proj
+- gate_proj
+- up_proj
+- down_proj
+train_file: data/training/final/train.jsonl
+val_file: data/training/final/val.jsonl
+warmup_ratio: 0.05

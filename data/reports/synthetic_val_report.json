@@ -1,0 +1,56 @@
+{
+  "split": "val",
+  "generator_version": "synth-1.0",
+  "seed": 8,
+  "requested": 120,
+  "accepted": 120,
+  "attempts": 120,
+  "failed_checks": 0,
+  "generator_errors": 0,
+  "duplicates_exact": 0,
+  "duplicates_near": 0,
+  "families": [
+    "nerve_conduction"
+  ],
+  "by_scenario": {
+    "added_documentation": 6,
+    "administrative_edit": 5,
+    "ambiguous_evidence": 12,
+    "billing_article_reference": 6,
+    "billing_instructions": 5,
+    "diagnosis_codes": 6,
+    "effective_date_revision": 6,
+    "evidence_requirements": 5,
+    "expanded_eligibility": 5,
+    "narrowed_eligibility": 5,
+    "new_coverage_indication": 5,
+    "new_limitation": 6,
+    "no_substantive_change": 11,
+    "provider_qualifications": 5,
+    "removed_coverage_indication": 5,
+    "removed_documentation": 6,
+    "retirement_replacement": 5,
+    "supervision_requirements": 6,
+    "threshold_change": 5,
+    "treatment_duration": 5
+  },
+  "by_family": {
+    "nerve_conduction": 120
+  },
+  "by_classification": {
+    "administrative": 12,
+    "clinical_criteria": 22,
+    "coding_billing": 16,
+    "coverage": 22,
+    "documentation": 16,
+    "insufficient_evidence": 7,
+    "no_substantive_change": 11,
+    "provider_requirements": 9,
+    "retirement_replacement": 5
+  },
+  "substantive": 90,
+  "abstain": 7,
+  "multi_finding": 28,
+  "output": "C:\\Users\\krish\\OneDrive\\Desktop\\careimpact\\data\\training\\synthetic\\val.jsonl",
+  "failed_output": "C:\\Users\\krish\\OneDrive\\Desktop\\careimpact\\data\\training\\review\\synthetic_val_failed.jsonl"
+}

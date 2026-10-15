@@ -1,0 +1,1243 @@
+{
+ "model": "careimpact-ft",
+ "eval_set": "synthetic_test",
+ "eval_file": "C:\\Users\\Prajnika\\OneDrive\\Documents\\Python Scripts\\careimpact11\\careimpact\\data\\evaluation\\synthetic_test.jsonl",
+ "data_origin": "synthetic",
+ "created_at": "2026-10-14T08:19:02+00:00",
+ "wall_time_s": 707.2,
+ "metrics": {
+  "n": 20,
+  "json_valid_rate": 1.0,
+  "schema_valid_rate": 1.0,
+  "classification_accuracy": 1.0,
+  "substantive_precision": 1.0,
+  "substantive_recall": 1.0,
+  "substantive_f1": 1.0,
+  "finding_recall": 0.9412,
+  "missed_important_change_rate": 0.0588,
+  "finding_category_accuracy": 0.9412,
+  "finding_precision": 0.9583,
+  "unsupported_claim_rate": 0.5417,
+  "evidence_exact_match_rate": 1.0,
+  "section_coverage": 1.0,
+  "no_change_accuracy": 1.0,
+  "abstention_recall": null,
+  "false_abstention_rate": 0.0,
+  "latency_mean_s": 34.917,
+  "latency_p95_s": 44.359,
+  "accuracy_by_class": {
+   "administrative": 1.0,
+   "clinical_criteria": 1.0,
+   "coding_billing": 1.0,
+   "coverage": 1.0,
+   "documentation": 1.0,
+   "no_substantive_change": 1.0,
+   "provider_requirements": 1.0,
+   "retirement_replacement": 1.0
+  },
+  "accuracy_by_scenario": {
+   "added_documentation": 1.0,
+   "administrative_edit": 1.0,
+   "ambiguous_evidence": 1.0,
+   "billing_article_reference": 1.0,
+   "billing_instructions": 1.0,
+   "diagnosis_codes": 1.0,
+   "effective_date_revision": 1.0,
+   "evidence_requirements": 1.0,
+   "expanded_eligibility": 1.0,
+   "narrowed_eligibility": 1.0,
+   "new_coverage_indication": 1.0,
+   "no_substantive_change": 1.0,
+   "provider_qualifications": 1.0,
+   "removed_coverage_indication": 1.0,
+   "removed_documentation": 1.0,
+   "retirement_replacement": 1.0,
+   "supervision_requirements": 1.0,
+   "threshold_change": 1.0,
+   "treatment_duration": 1.0
+  },
+  "model_memory_bytes": null,
+  "request_failures": 0
+ },
+ "rows": [
+  {
+   "example_id": "syn-test-9-00001",
+   "scenario": "retirement_replacement",
+   "gold_class": "retirement_replacement",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "retirement_replacement",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 29.899,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L99350",
+    "change_classification": "retirement_replacement",
+    "is_substantive": true,
+    "change_summary": "The policy is retired without a replacement policy.",
+    "changed_sections": [
+     "Retirement Notice"
+    ],
+    "findings": [
+     {
+      "section": "Retirement Notice",
+      "change_type": "added",
+      "category": "retirement_replacement",
+      "what_changed": "The policy is retired without a replacement policy.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "compliance",
+       "billing"
+      ],
+      "potential_operational_impact": "There is no replacement policy, so coverage decisions will cease for this indication.",
+      "recommended_action": "Determine how claims are currently being reviewed and confirm whether they fall within the previous policy before the retirement date.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "Coverage decisions for this indication will cease after the retirement date stated in the supplied text."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00002",
+   "scenario": "ambiguous_evidence",
+   "gold_class": "documentation",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "documentation",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 25.889,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L99563",
+    "change_classification": "documentation",
+    "is_substantive": true,
+    "change_summary": "A specific documentation requirement was replaced with general language.",
+    "changed_sections": [
+     "Associated Information"
+    ],
+    "findings": [
+     {
+      "section": "Associated Information",
+      "change_type": "modified",
+      "category": "documentation",
+      "what_changed": "A specific documentation requirement was replaced with general language.",
+      "evidence_old": "Documentation must identify the practitioner who performed or supervised each treatment session.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "It is unclear whether the required documentation actually exists or how it should be documented.",
+      "recommended_action": "Add a specific documentation requirement and compare it to the previous wording before updating the policy.",
+      "confidence": "medium",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "The new wording is vague, so the actual documentation requirement cannot be determined from the supplied text."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00003",
+   "scenario": "supervision_requirements",
+   "gold_class": "provider_requirements",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "provider_requirements",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 23.948,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L91413",
+    "change_classification": "provider_requirements",
+    "is_substantive": true,
+    "change_summary": "The required supervision level changed from general to personal supervision.",
+    "changed_sections": [
+     "Provider Qualifications"
+    ],
+    "findings": [
+     {
+      "section": "Provider Qualifications",
+      "change_type": "modified",
+      "category": "provider_requirements",
+      "what_changed": "The required supervision level changed from general to personal supervision.",
+      "evidence_old": "Transcranial magnetic stimulation must be furnished under general supervision of a physician.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "Supervision requirements are less stringent, which may allow more flexible staffing.",
+      "recommended_action": "Confirm the supervision level with the contractor and update staffing schedules and compliance checklists.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00004",
+   "scenario": "diagnosis_codes",
+   "gold_class": "coding_billing",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "coding_billing",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 29.859,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L98910",
+    "change_classification": "coding_billing",
+    "is_substantive": true,
+    "change_summary": "Diagnosis code F33.2 (Major depressive disorder, recurrent severe without psychotic features) was added to the codes that support medical necessity.",
+    "changed_sections": [
+     "ICD-10-CM Codes that Support Medical Necessity"
+    ],
+    "findings": [
+     {
+      "section": "ICD-10-CM Codes that Support Medical Necessity",
+      "change_type": "added",
+      "category": "coding_billing",
+      "what_changed": "Diagnosis code F33.2 was added to the codes that support medical necessity.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "billing",
+       "patient_eligibility"
+      ],
+      "potential_operational_impact": "Claims reporting this diagnosis may now be supported under the policy.",
+      "recommended_action": "Update claim edits and coding references, and confirm the code list against the related Billing and Coding Article.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00005",
+   "scenario": "treatment_duration",
+   "gold_class": "coverage",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "coverage",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 26.514,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L94639",
+    "change_classification": "coverage",
+    "is_substantive": true,
+    "change_summary": "The utilization limit for transcranial magnetic stimulation was revised: the stated value of 30 was changed to 36.",
+    "changed_sections": [
+     "Frequency and Duration"
+    ],
+    "findings": [
+     {
+      "section": "Frequency and Duration",
+      "change_type": "modified",
+      "category": "coverage",
+      "what_changed": "The utilization limit for transcranial magnetic stimulation was revised: the stated value of 30 was changed to 36.",
+      "evidence_old": "A course of treatment is limited to 30 sessions over 9 weeks.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "Treatment plans and scheduling will need to fit the revised limit, and services beyond it may be denied.",
+      "recommended_action": "Update scheduling rules and claim edits to reflect the revised limit, and review beneficiaries currently in a course of treatment.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00006",
+   "scenario": "threshold_change",
+   "gold_class": "clinical_criteria",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "clinical_criteria",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 2,
+   "pred_findings_matched": 2,
+   "unsupported_findings": 1,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 39.83,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L92811",
+    "change_classification": "clinical_criteria",
+    "is_substantive": true,
+    "change_summary": "The new version adds a dosage threshold for transcranial magnetic stimulation, which narrows eligibility for treatment. Contractor contact information was updated.",
+    "changed_sections": [
+     "Eligibility Criteria",
+     "Policy Contact"
+    ],
+    "findings": [
+     {
+      "section": "Eligibility Criteria",
+      "change_type": "added",
+      "category": "clinical_criteria",
+      "what_changed": "The new version adds a dosage threshold for transcranial magnetic stimulation, which narrows eligibility for treatment.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "patient_eligibility"
+      ],
+      "potential_operational_impact": "Beneficiaries may need to exceed the previous threshold before treatment is considered.",
+      "recommended_action": "Update eligibility screening to the stated threshold, and review borderline cases against the official policy.",
+      "confidence": "high",
+      "requires_verification": true
+     },
+     {
+      "section": "Policy Contact",
+      "change_type": "modified",
+      "category": "provider_requirements",
+      "what_changed": "Contractor contact information was updated.",
+      "evidence_old": "Questions about this policy may be directed to the fictional contractor policy unit at policy-unit-80@example.org.",
+      "evidence_new": null,
+      "impact_areas": [
+       "provider_workflow"
+      ],
+      "potential_operational_impact": "Contractor contact information was updated, which affects correspondence about this policy.",
+      "recommended_action": "Update internal contact references for contractor communications related to this policy.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00007",
+   "scenario": "new_coverage_indication",
+   "gold_class": "coverage",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "coverage",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 42.899,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L92401",
+    "change_classification": "coverage",
+    "is_substantive": true,
+    "change_summary": "The new version adds beneficiaries with compromised skin grafts or flaps as a covered indication for hyperbaric oxygen therapy.",
+    "changed_sections": [
+     "Coverage Indications, Limitations, and/or Medical Necessity"
+    ],
+    "findings": [
+     {
+      "section": "Coverage Indications, Limitations, and/or Medical Necessity",
+      "change_type": "added",
+      "category": "coverage",
+      "what_changed": "The new version adds beneficiaries with compromised skin grafts or flaps as a covered indication for hyperbaric oxygen therapy.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "patient_eligibility",
+       "billing"
+      ],
+      "potential_operational_impact": "Beneficiaries in this group may now meet coverage requirements for hyperbaric oxygen therapy.",
+      "recommended_action": "Notify ordering practitioners of the added indication and verify the coding requirements before submitting claims.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00008",
+   "scenario": "no_substantive_change",
+   "gold_class": "no_substantive_change",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "no_substantive_change",
+   "class_correct": true,
+   "substantive_gold": false,
+   "substantive_pred": false,
+   "gold_substantive_findings": 0,
+   "matched_substantive_findings": 0,
+   "category_correct_findings": 0,
+   "pred_findings": 0,
+   "pred_findings_matched": 0,
+   "unsupported_findings": 0,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": true,
+   "latency_s": 39.982,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L97826",
+    "change_classification": "no_substantive_change",
+    "is_substantive": false,
+    "change_summary": "The versions differ only in wording or formatting; no substantive change was identified in the supplied text.",
+    "changed_sections": [
+     "Coverage Indications, Limitations, and/or Medical Necessity",
+     "Billing and Coding Guidelines"
+    ],
+    "findings": [],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "Equivalence of the reworded text was assessed from the supplied text only."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00009",
+   "scenario": "ambiguous_evidence",
+   "gold_class": "documentation",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "documentation",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 30.898,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L91509",
+    "change_classification": "documentation",
+    "is_substantive": true,
+    "change_summary": "A specific documentation requirement was replaced with general language.",
+    "changed_sections": [
+     "Documentation Requirements for the Medical Record"
+    ],
+    "findings": [
+     {
+      "section": "Documentation Requirements for the Medical Record",
+      "change_type": "modified",
+      "category": "documentation",
+      "what_changed": "A specific documentation requirement was replaced with general language.",
+      "evidence_old": "Documentation must describe prior treatments attempted and the outcome of each.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "It is unclear whether the specific requirement still applies.",
+      "recommended_action": "Continue the existing documentation practice and request clarification from the contractor.",
+      "confidence": "medium",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "The new wording is vague, so the actual documentation requirement cannot be determined from the supplied text."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00010",
+   "scenario": "removed_documentation",
+   "gold_class": "documentation",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "documentation",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 31.065,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L96153",
+    "change_classification": "documentation",
+    "is_substantive": true,
+    "change_summary": "A documentation requirement was removed from the policy text.",
+    "changed_sections": [
+     "Documentation Requirements"
+    ],
+    "findings": [
+     {
+      "section": "Documentation Requirements",
+      "change_type": "removed",
+      "category": "documentation",
+      "what_changed": "A documentation requirement was removed from the policy text.",
+      "evidence_old": "The treating practitioner must document a face-to-face evaluation within 30 days before the initial treatment.",
+      "evidence_new": null,
+      "impact_areas": [
+       "documentation",
+       "compliance"
+      ],
+      "potential_operational_impact": "Documentation workflows may not need to change, because the requirement may still apply through other rules.",
+      "recommended_action": "Keep the current documentation practice until the change is confirmed with the contractor or the related Billing and Coding Article.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "Removal of wording does not confirm that the documentation requirement no longer applies; it may still be required by general Medicare documentation rules or a related article."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00011",
+   "scenario": "billing_instructions",
+   "gold_class": "coding_billing",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "coding_billing",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 2,
+   "pred_findings_matched": 2,
+   "unsupported_findings": 1,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 36.183,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L95631",
+    "change_classification": "coding_billing",
+    "is_substantive": true,
+    "change_summary": "A new billing instruction was added. Contractor contact information was updated.",
+    "changed_sections": [
+     "Billing Instructions",
+     "Contractor Contact Information"
+    ],
+    "findings": [
+     {
+      "section": "Billing Instructions",
+      "change_type": "added",
+      "category": "coding_billing",
+      "what_changed": "A new billing instruction was added.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "billing"
+      ],
+      "potential_operational_impact": "Billing staff may need to change how claims for bone mass measurement are reported.",
+      "recommended_action": "Update billing guidance and claim scrubber rules before submitting affected claims.",
+      "confidence": "high",
+      "requires_verification": true
+     },
+     {
+      "section": "Contractor Contact Information",
+      "change_type": "modified",
+      "category": "administrative",
+      "what_changed": "Contractor contact information was updated.",
+      "evidence_old": "Questions about this policy may be directed to the fictional contractor policy unit at policy-unit-74@example.org.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "Contractor contact information was updated, so staff who contact the contractor about this policy should use the updated value.",
+      "recommended_action": "Update internal contact references for this policy.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00012",
+   "scenario": "removed_coverage_indication",
+   "gold_class": "coverage",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "coverage",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 32.145,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L91663",
+    "change_classification": "coverage",
+    "is_substantive": true,
+    "change_summary": "The new version no longer lists beneficiaries with decompression illness as a covered indication.",
+    "changed_sections": [
+     "Indications for Coverage"
+    ],
+    "findings": [
+     {
+      "section": "Indications for Coverage",
+      "change_type": "removed",
+      "category": "coverage",
+      "what_changed": "The new version no longer lists beneficiaries with decompression illness as a covered indication.",
+      "evidence_old": "Hyperbaric oxygen therapy is considered reasonable and necessary for beneficiaries with decompression illness.",
+      "evidence_new": null,
+      "impact_areas": [
+       "patient_eligibility",
+       "billing"
+      ],
+      "potential_operational_impact": "Services for this group may no longer be supported under this policy, which could lead to denials if scheduling continues unchanged.",
+      "recommended_action": "Review scheduled and pending services for this indication and confirm with the contractor whether coverage moved to another policy before changing practice.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "Removal from this section does not show whether the indication is addressed in another policy or article."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00013",
+   "scenario": "billing_article_reference",
+   "gold_class": "coding_billing",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "coding_billing",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 2,
+   "pred_findings_matched": 2,
+   "unsupported_findings": 1,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 46.193,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L91344",
+    "change_classification": "coding_billing",
+    "is_substantive": true,
+    "change_summary": "The diagnosis code list was removed from the policy and replaced with a reference to a related Billing and Coding Article. Contractor contact information was updated.",
+    "changed_sections": [
+     "ICD-10-CM Codes that Support Medical Necessity",
+     "Policy Contact"
+    ],
+    "findings": [
+     {
+      "section": "ICD-10-CM Codes that Support Medical Necessity",
+      "change_type": "modified",
+      "category": "coding_billing",
+      "what_changed": "The diagnosis code list was removed from the policy and replaced with a reference to a related Billing and Coding Article.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "Coding staff will need the referenced article to determine which diagnosis codes are supported.",
+      "recommended_action": "Obtain Billing and Coding Article SYN-A56751 and compare its code list with the previous list before updating claim edits.",
+      "confidence": "high",
+      "requires_verification": true
+     },
+     {
+      "section": "Policy Contact",
+      "change_type": "modified",
+      "category": "provider_requirements",
+      "what_changed": "Contractor contact information was updated.",
+      "evidence_old": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0145-4384.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "Contractor medical review may need the referenced article to determine whether the policy requirements are met.",
+      "recommended_action": "Obtain Billing and Coding Article SYN-A56751 before reviewing the policy requirements against it.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "The related Billing and Coding Article was not supplied, so it is unknown whether the supported codes changed."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00014",
+   "scenario": "effective_date_revision",
+   "gold_class": "administrative",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "administrative",
+   "class_correct": true,
+   "substantive_gold": false,
+   "substantive_pred": false,
+   "gold_substantive_findings": 0,
+   "matched_substantive_findings": 0,
+   "category_correct_findings": 0,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 0,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": true,
+   "latency_s": 30.983,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L98934",
+    "change_classification": "administrative",
+    "is_substantive": false,
+    "change_summary": "The date from which the policy requirements apply changed from 09/01/2024 to 10/01/2024.",
+    "changed_sections": [
+     "Applicability"
+    ],
+    "findings": [
+     {
+      "section": "Applicability",
+      "change_type": "modified",
+      "category": "administrative",
+      "what_changed": "The date from which the policy requirements apply changed from 09/01/2024 to 10/01/2024.",
+      "evidence_old": "The requirements of this policy apply to services performed on or after 09/01/2024.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "The date from which the policy requirements apply changed without changing the substantive requirement.",
+      "recommended_action": "No workflow change is indicated; confirm that the effective date does not affect other policies or claim edits.",
+      "confidence": "high",
+      "requires_verification": false
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00015",
+   "scenario": "administrative_edit",
+   "gold_class": "administrative",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "administrative",
+   "class_correct": true,
+   "substantive_gold": false,
+   "substantive_pred": false,
+   "gold_substantive_findings": 0,
+   "matched_substantive_findings": 0,
+   "category_correct_findings": 0,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": true,
+   "latency_s": 24.712,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L95902",
+    "change_classification": "administrative",
+    "is_substantive": false,
+    "change_summary": "A reference was added to the sources list.",
+    "changed_sections": [
+     "Sources of Information"
+    ],
+    "findings": [
+     {
+      "section": "Sources of Information",
+      "change_type": "added",
+      "category": "administrative",
+      "what_changed": "A reference was added to the sources list.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "No change to coverage criteria is indicated by this update.",
+      "recommended_action": "No workflow change is needed.",
+      "confidence": "high",
+      "requires_verification": false
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00016",
+   "scenario": "evidence_requirements",
+   "gold_class": "clinical_criteria",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "clinical_criteria",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 2,
+   "pred_findings_matched": 2,
+   "unsupported_findings": 1,
+   "quotes": 1,
+   "quotes_matched": 1,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 43.61,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L95589",
+    "change_classification": "clinical_criteria",
+    "is_substantive": true,
+    "change_summary": "The time window for required transcutaneous oxygen measurement results changed from 3 to 18 months. A reference was added to the sources list.",
+    "changed_sections": [
+     "Clinical Evidence Required for Coverage",
+     "Sources of Information"
+    ],
+    "findings": [
+     {
+      "section": "Clinical Evidence Required for Coverage",
+      "change_type": "modified",
+      "category": "clinical_criteria",
+      "what_changed": "The time window for required transcutaneous oxygen measurement results changed from 3 to 18 months.",
+      "evidence_old": "Results of transcutaneous oxygen measurement obtained within 3 months before the initial treatment must be available.",
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "The time window for required transcutaneous oxygen measurement results is longer, which may allow more flexibility in scheduling.",
+      "recommended_action": "Update scheduling rules to reflect the revised window size.",
+      "confidence": "high",
+      "requires_verification": false
+     },
+     {
+      "section": "Sources of Information",
+      "change_type": "added",
+      "category": "administrative",
+      "what_changed": "A reference was added to the sources list.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [],
+      "potential_operational_impact": "No change to coverage criteria is indicated by this update.",
+      "recommended_action": "No workflow change is needed.",
+      "confidence": "high",
+      "requires_verification": false
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+     "The source versions have not been verified against official records, so the comparison may not reflect actual policy history."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00017",
+   "scenario": "narrowed_eligibility",
+   "gold_class": "clinical_criteria",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "clinical_criteria",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 0,
+   "category_correct_findings": 0,
+   "pred_findings": 1,
+   "pred_findings_matched": 0,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 44.359,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L95787",
+    "change_classification": "clinical_criteria",
+    "is_substantive": true,
+    "change_summary": "A new eligibility criterion was added, which narrows who qualifies for transcranial magnetic stimulation.",
+    "changed_sections": [
+     "Coverage Indications, Limitations, and/or Medical Necessity"
+    ],
+    "findings": [
+     {
+      "section": "Patient Selection Criteria",
+      "change_type": "added",
+      "category": "clinical_criteria",
+      "what_changed": "A new eligibility criterion was added, which narrows who qualifies for transcranial magnetic stimulation.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "patient_eligibility",
+       "provider_workflow"
+      ],
+      "potential_operational_impact": "Some beneficiaries who previously qualified may no longer meet the criteria, and staff will need to confirm the new criterion before services begin.",
+      "recommended_action": "Update intake checklists with the new criterion and notify ordering practitioners.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00018",
+   "scenario": "provider_qualifications",
+   "gold_class": "provider_requirements",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "provider_requirements",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 43.039,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L94339",
+    "change_classification": "provider_requirements",
+    "is_substantive": true,
+    "change_summary": "A new provider qualification requirement was added.",
+    "changed_sections": [
+     "Coverage Indications, Limitations, and/or Medical Necessity"
+    ],
+    "findings": [
+     {
+      "section": "Coverage Indications, Limitations, and/or Medical Necessity",
+      "change_type": "added",
+      "category": "provider_requirements",
+      "what_changed": "A new provider qualification requirement was added.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "provider_workflow",
+       "compliance"
+      ],
+      "potential_operational_impact": "Some practitioners or staff may no longer meet the requirements to order or furnish hyperbaric oxygen therapy.",
+      "recommended_action": "Review credentialing records for practitioners who furnish hyperbaric oxygen therapy and update credentialing checklists.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00019",
+   "scenario": "added_documentation",
+   "gold_class": "documentation",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "documentation",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 2,
+   "pred_findings_matched": 2,
+   "unsupported_findings": 2,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 43.819,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L96226",
+    "change_classification": "documentation",
+    "is_substantive": true,
+    "change_summary": "A new documentation requirement was added. A reference was added to the sources list.",
+    "changed_sections": [
+     "Documentation Requirements for the Medical Record",
+     "Sources of Information"
+    ],
+    "findings": [
+     {
+      "section": "Documentation Requirements for the Medical Record",
+      "change_type": "added",
+      "category": "documentation",
+      "what_changed": "A new documentation requirement was added.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "documentation",
+       "compliance"
+      ],
+      "potential_operational_impact": "Clinical staff may need to capture additional information, and claims lacking it could be denied on medical review.",
+      "recommended_action": "Update documentation templates and staff guidance to capture the new requirement before the policy takes effect.",
+      "confidence": "high",
+      "requires_verification": true
+     },
+     {
+      "section": "Sources of Information",
+      "change_type": "added",
+      "category": "administrative",
+      "what_changed": "A reference was added to the sources list.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "documentation"
+      ],
+      "potential_operational_impact": "Staff may need to confirm which reference is cited in future articles.",
+      "recommended_action": "Update reference citations in documentation and claim edits.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  },
+  {
+   "example_id": "syn-test-9-00020",
+   "scenario": "expanded_eligibility",
+   "gold_class": "clinical_criteria",
+   "json_valid": true,
+   "schema_valid": true,
+   "parse_errors": [],
+   "pred_class": "clinical_criteria",
+   "class_correct": true,
+   "substantive_gold": true,
+   "substantive_pred": true,
+   "gold_substantive_findings": 1,
+   "matched_substantive_findings": 1,
+   "category_correct_findings": 1,
+   "pred_findings": 1,
+   "pred_findings_matched": 1,
+   "unsupported_findings": 1,
+   "quotes": 0,
+   "quotes_matched": 0,
+   "section_recall": 1.0,
+   "gold_abstain": false,
+   "pred_abstain": false,
+   "no_change_case": false,
+   "latency_s": 32.505,
+   "raw_output": null,
+   "prediction": {
+    "document_id": "SYN-L96457",
+    "change_classification": "clinical_criteria",
+    "is_substantive": true,
+    "change_summary": "The new version adds an alternative qualifying pathway, which broadens eligibility for transcranial magnetic stimulation.",
+    "changed_sections": [
+     "Medical Necessity Criteria"
+    ],
+    "findings": [
+     {
+      "section": "Medical Necessity Criteria",
+      "change_type": "added",
+      "category": "clinical_criteria",
+      "what_changed": "The new version adds an alternative qualifying pathway, which broadens eligibility for transcranial magnetic stimulation.",
+      "evidence_old": null,
+      "evidence_new": null,
+      "impact_areas": [
+       "patient_eligibility"
+      ],
+      "potential_operational_impact": "Beneficiaries who previously did not qualify may now meet the alternative pathway, which is described in the new version.",
+      "recommended_action": "Add the alternative pathway to eligibility screening and review recently declined referrals.",
+      "confidence": "high",
+      "requires_verification": true
+     }
+    ],
+    "abstain": false,
+    "limitations": [
+     "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+    ]
+   }
+  }
+ ]
+}

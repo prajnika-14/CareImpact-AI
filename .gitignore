@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# large / regenerable artifacts
+data/raw/http_cache/
+data/raw/mcd_pages/
+models/runs/*/adapter*/
+models/runs/*/checkpoint-*/
+models/runs/*/merged/
+*.gguf
+
+# Colab upload bundle (regenerable)
+colab/careimpact_bundle.zip
+
+llama.cpp/
+
+adapter/adapter_model.safetensors
+careimpact-ft.gguf
+*.gguf
+
+llama.cpp/
+adapter/adapter_model.safetensors
+careimpact-ft.gguf
+*.gguf

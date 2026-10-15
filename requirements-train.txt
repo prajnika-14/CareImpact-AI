@@ -1,0 +1,10 @@
+# Fine-tuning stack (CPU by default). On Windows/CPU install torch from the CPU index:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-train.txt
+# On Colab/Kaggle GPUs the preinstalled CUDA torch is used; bitsandbytes enables QLoRA (CUDA only).
+transformers>=4.45
+peft>=0.13
+accelerate>=1.0
+safetensors>=0.4
+sentencepiece
+pyyaml

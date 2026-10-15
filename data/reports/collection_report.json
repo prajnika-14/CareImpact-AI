@@ -1,0 +1,16 @@
+{
+  "run_at": "2026-10-12T17:01:10+00:00",
+  "lcds_listed": 969,
+  "lcds_targeted": 5,
+  "documents_stored": 10,
+  "pairs_this_run": 5,
+  "pairs_total": 5,
+  "pairs_by_status": {
+    "verified": 5,
+    "unverified": 0,
+    "unavailable": 0
+  },
+  "identical_content_pairs": 4,
+  "failed_retrievals": [],
+  "unresolved_pairs": []
+}

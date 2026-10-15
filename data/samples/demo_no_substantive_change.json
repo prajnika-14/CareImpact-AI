@@ -1,0 +1,133 @@
+{
+ "example_id": "demo-no_substantive_change",
+ "data_origin": "synthetic",
+ "family": "tms",
+ "scenario": "no_substantive_change",
+ "old": {
+  "doc_id": "SYN-L95090",
+  "title": "Transcranial Magnetic Stimulation for Depression (Synthetic)",
+  "version": "2",
+  "doc_type": "LCD",
+  "status": "Superseded",
+  "contractor": "Fictional MAC Jurisdiction H",
+  "original_effective_date": null,
+  "revision_effective_date": "04/01/2024",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "unverified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "text": "Coverage Indications\nTranscranial magnetic stimulation is covered when the requirements of this policy are met.\n1. Coverage of transcranial magnetic stimulation is provided for beneficiaries with depressive episodes of bipolar disorder.\n2. Coverage of transcranial magnetic stimulation is provided for beneficiaries with major depressive disorder without psychotic features.\n3. Coverage of transcranial magnetic stimulation is provided for beneficiaries with treatment-resistant depression who cannot tolerate medication.\n4. Coverage of transcranial magnetic stimulation is provided for beneficiaries with obsessive-compulsive disorder.\nEligibility Criteria\nThe beneficiary must meet each of the following criteria:\n- Conservative treatment has been tried and has not produced adequate improvement.\n- The beneficiary is able to understand and participate in the plan of care.\n- The beneficiary has not responded to at least 1 adequate trials of antidepressant medication.\nLimitations\nThe following are not considered reasonable and necessary:\n- Simultaneous treatment with electroconvulsive therapy is not covered.\n- Maintenance treatment after remission is not covered.\n- Treatment delivered with devices not cleared for depression is not covered.\nRequired Testing\nThe following clinical evidence is required:\n- Results of a standardized depression rating scale obtained within 3 months before the initial treatment session must be available.\n- Results of a repeat assessment must be documented before continued coverage is approved.\nProvider Qualifications\n- Facilities furnishing transcranial magnetic stimulation must maintain written protocols for emergency response.\n- The interpreting practitioner must be board certified in psychiatry.\n- The performing practitioner must have documented training and experience in transcranial magnetic stimulation.\n- Transcranial magnetic stimulation must be furnished under direct supervision of a physician."
+   },
+   {
+    "heading": "Associated Information",
+    "text": "Utilization Guidelines\nThe following frequency and duration limits apply:\nA course of treatment is limited to 36 sessions over 7 weeks.\nDocumentation Requirements for the Medical Record\nThe medical record must support the medical necessity of each service.\n- Documentation must describe prior treatments attempted and the outcome of each.\n- When transcranial magnetic stimulation continues beyond the initial period, the record must document measurable improvement.\n- A plan of care that specifies goals, frequency and expected duration must be on file before transcranial magnetic stimulation begins.\n- Documentation must state the clinical reason any treatment session was missed or discontinued."
+   },
+   {
+    "heading": "Covered Diagnosis Codes (ICD-10-CM)",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n- F32.1 - Major depressive disorder, single episode, moderate\n- F32.2 - Major depressive disorder, single episode, severe without psychotic features\n- F33.1 - Major depressive disorder, recurrent, moderate"
+   },
+   {
+    "heading": "Billing and Coding Guidelines",
+    "text": "The following billing instructions apply:\n1. Services that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected.\n2. The ICD-10-CM code that supports medical necessity must be reported on the claim."
+   },
+   {
+    "heading": "Summary of Evidence",
+    "text": "The evidence reviewed consists primarily of randomized controlled trials and prospective cohort studies. Published studies report improvements in depression rating scale scores among beneficiaries receiving transcranial magnetic stimulation. Evidence for benefit is strongest when transcranial magnetic stimulation is combined with ongoing medical management."
+   },
+   {
+    "heading": "Sources of Information",
+    "text": "Fictional Society of Psychiatry. Clinical practice guideline for major depressive disorder. 2020 edition."
+   },
+   {
+    "heading": "Contractor Contact Information",
+    "text": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0156-2338."
+   }
+  ],
+  "content_hash": null
+ },
+ "new": {
+  "doc_id": "SYN-L95090",
+  "title": "Transcranial Magnetic Stimulation for Depression (Synthetic)",
+  "version": "3",
+  "doc_type": "LCD",
+  "status": "Currently in Effect",
+  "contractor": "Fictional MAC Jurisdiction H",
+  "original_effective_date": null,
+  "revision_effective_date": "11/18/2024",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "unverified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "text": "Coverage Indications\nTranscranial magnetic stimulation is covered when the requirements of this policy are met.\n1. Coverage of transcranial magnetic stimulation is provided for patients with depressive episodes of bipolar disorder.\n2. Coverage of transcranial magnetic stimulation is provided for patients with major depressive disorder without psychotic features.\n3. Coverage of transcranial magnetic stimulation is provided for patients with treatment-resistant depression who cannot tolerate medication.\n4. Coverage of transcranial magnetic stimulation is provided for patients with obsessive-compulsive disorder.\nEligibility Criteria\nThe beneficiary must meet each of the following criteria:\n- Conservative treatment has been tried and has not produced adequate improvement.\n- The beneficiary is able to understand and participate in the plan of care.\n- The beneficiary has not responded to at least 1 adequate trials of antidepressant medication.\nLimitations\nThe following are not considered reasonable and necessary:\n- Simultaneous treatment with electroconvulsive therapy is not covered.\n- Maintenance treatment after remission is not covered.\n- Treatment delivered with devices not cleared for depression is not covered.\nRequired Testing\nThe following clinical evidence is required:\n- Results of a standardized depression rating scale obtained within 3 months before the initial treatment session must be available.\n- Results of a repeat assessment must be documented before continued coverage is approved.\nProvider Qualifications\n- Facilities furnishing transcranial magnetic stimulation must maintain written protocols for emergency response.\n- The interpreting practitioner must be board certified in psychiatry.\n- The performing practitioner must have documented training and experience in transcranial magnetic stimulation.\n- Transcranial magnetic stimulation must be furnished under direct supervision of a physician."
+   },
+   {
+    "heading": "Associated Information",
+    "text": "Utilization Guidelines\nThe following frequency and duration limits apply:\nA course of treatment is limited to 36 sessions over 7 weeks.\nDocumentation Requirements for the Medical Record\nThe medical record must support the medical necessity of each service.\n- Documentation shall describe prior treatments attempted and the outcome of each.\n- When transcranial magnetic stimulation continues beyond the initial period, the record shall document measurable improvement.\n- A plan of care that specifies goals, frequency and expected duration shall be on file before transcranial magnetic stimulation begins.\n- Documentation shall state the clinical reason any treatment session was missed or discontinued."
+   },
+   {
+    "heading": "Covered Diagnosis Codes (ICD-10-CM)",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n- F32.1 - Major depressive disorder, single episode, moderate\n- F32.2 - Major depressive disorder, single episode, severe without psychotic features\n- F33.1 - Major depressive disorder, recurrent, moderate"
+   },
+   {
+    "heading": "Billing and Coding Guidelines",
+    "text": "The following billing instructions apply:\n1. Services that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected.\n2. The ICD-10-CM code that supports medical necessity shall be reported on the claim."
+   },
+   {
+    "heading": "Summary of Evidence",
+    "text": "The evidence reviewed consists primarily of randomized controlled trials and prospective cohort studies. Published studies report improvements in depression rating scale scores among beneficiaries receiving transcranial magnetic stimulation. Evidence for benefit is strongest when transcranial magnetic stimulation is combined with ongoing medical management."
+   },
+   {
+    "heading": "Sources of Information",
+    "text": "Fictional Society of Psychiatry. Clinical practice guideline for major depressive disorder. 2020 edition."
+   },
+   {
+    "heading": "Contractor Contact Information",
+    "text": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0156-2338."
+   }
+  ],
+  "content_hash": null
+ },
+ "target": {
+  "document_id": "SYN-L95090",
+  "change_classification": "no_substantive_change",
+  "is_substantive": false,
+  "change_summary": "The versions differ only in wording or formatting; no substantive change was identified in the supplied text.",
+  "changed_sections": [
+   "Coverage Indications, Limitations, and/or Medical Necessity",
+   "Associated Information",
+   "Billing and Coding Guidelines"
+  ],
+  "findings": [],
+  "abstain": false,
+  "limitations": [
+   "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+   "Equivalence of the reworded text was assessed from the supplied text only.",
+   "The source versions have not been verified against official records, so the comparison may not reflect actual policy history."
+  ]
+ },
+ "target_source": "scenario_spec",
+ "generator_version": "synth-1.0",
+ "seed": 404,
+ "validation_status": "auto_validated",
+ "validation_errors": [],
+ "training_eligible": true,
+ "created_at": "2026-10-12T16:50:34+00:00"
+}

@@ -1,0 +1,46 @@
+/* Help assistant widget. Uses the tokens defined in styles.css. */
+.chat-launcher { position: fixed; right: 24px; bottom: 24px; z-index: 40; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 0; background: var(--accent); color: #fff; font: inherit; font-weight: 650; cursor: pointer; box-shadow: var(--shadow-lg); transition: transform .15s, background .15s; }
+.chat-launcher:hover { background: var(--accent-hover); transform: translateY(-2px); }
+.chat-launcher.hidden { display: none; }
+.chat-launcher svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+.chat-panel { position: fixed; right: 24px; bottom: 24px; z-index: 45; width: 380px; max-width: calc(100vw - 32px); height: 560px; max-height: calc(100vh - 48px); display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; animation: chat-in .18s ease-out; }
+@keyframes chat-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.chat-head { display: flex; align-items: center; gap: 4px; padding: 14px 12px 14px 18px; background: linear-gradient(135deg, var(--accent-2), var(--accent)); color: #fff; }
+.chat-head > div { flex: 1; display: grid; }
+.chat-head span { font-size: 11.5px; color: #c9d6f2; }
+.chat-icon-btn { background: none; border: 0; color: #fff; padding: 6px; border-radius: 8px; cursor: pointer; }
+.chat-icon-btn:hover { background: rgba(255, 255, 255, .14); }
+.chat-icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; display: block; }
+
+.chat-log { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; background: var(--surface-2); }
+.msg { max-width: 86%; padding: 9px 13px; border-radius: 14px; font-size: 13.5px; line-height: 1.5; overflow-wrap: anywhere; }
+.msg.bot { align-self: flex-start; background: var(--surface); border: 1px solid var(--border); color: var(--text); border-bottom-left-radius: 4px; }
+.msg.user { align-self: flex-end; background: var(--accent); color: #fff; border-bottom-right-radius: 4px; }
+.msg.error { border-color: #f2c4c0; background: var(--del-bg); color: var(--del); }
+.msg code { font-size: 12px; }
+.msg.typing { display: inline-flex; gap: 4px; padding: 12px 14px; }
+.msg.typing span { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1.2s infinite both; }
+.msg.typing span:nth-child(2) { animation-delay: .2s; }
+.msg.typing span:nth-child(3) { animation-delay: .4s; }
+@keyframes blink { 0%, 80%, 100% { opacity: .25; } 40% { opacity: 1; } }
+
+.chat-suggest { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px; background: var(--surface-2); }
+.chat-suggest:not(:empty) { padding-bottom: 10px; }
+.chat-suggest button { font: inherit; font-size: 12px; padding: 5px 10px; border-radius: 999px; border: 1px solid #c4d3f3; background: var(--accent-soft); color: var(--accent); cursor: pointer; }
+.chat-suggest button:hover { background: #dbe5fa; }
+
+.chat-form { display: flex; gap: 8px; align-items: flex-end; padding: 12px; border-top: 1px solid var(--border); }
+.chat-form textarea { font-family: var(--font); font-size: 13.5px; resize: none; max-height: 120px; }
+.chat-send { flex: none; width: 40px; height: 40px; border-radius: 10px; border: 0; background: var(--accent); color: #fff; cursor: pointer; display: grid; place-items: center; }
+.chat-send:hover { background: var(--accent-hover); }
+.chat-send svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linejoin: round; }
+.chat-form.busy .chat-send { opacity: .5; cursor: progress; }
+.chat-foot { margin: 0; padding: 0 12px 10px; font-size: 11px; color: var(--muted); text-align: center; }
+
+@media (max-width: 520px) {
+  .chat-launcher { right: 16px; bottom: 16px; }
+  .chat-launcher span { display: none; }
+  .chat-launcher { padding: 14px; }
+  .chat-panel { right: 0; bottom: 0; width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; border-radius: 0; }
+}

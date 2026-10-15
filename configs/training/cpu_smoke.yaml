@@ -1,0 +1,22 @@
+# Feasibility test on a CPU laptop (i5-1235U, 16 GB). Proves the pipeline runs and
+# measures seconds/step and RAM. NOT expected to produce a useful model.
+base_model: Qwen/Qwen2.5-0.5B-Instruct
+train_file: data/training/final/train.jsonl
+val_file: data/training/final/val.jsonl
+output_dir: models/runs/cpu_smoke_0p5b
+limit_train: 64
+limit_val: 8
+max_seq_len: 2048
+max_steps: 8
+grad_accum: 4
+learning_rate: 2.0e-4
+warmup_ratio: 0.1
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules: [q_proj, k_proj, v_proj, o_proj]
+gradient_checkpointing: true
+device: cpu
+dtype: float32
+num_threads: 4
+seed: 13

@@ -1,0 +1,188 @@
+{
+ "example_id": "demo-added_documentation",
+ "data_origin": "synthetic",
+ "family": "bone_density",
+ "scenario": "added_documentation",
+ "old": {
+  "doc_id": "SYN-L91594",
+  "title": "Bone Mass Measurement (DXA) (Synthetic)",
+  "version": "9",
+  "doc_type": "LCD",
+  "status": "Superseded",
+  "contractor": "Fictional MAC Jurisdiction D",
+  "original_effective_date": null,
+  "revision_effective_date": "07/01/2021",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Indications for Coverage",
+    "text": "Bone mass measurement is covered when the requirements of this policy are met.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with primary hyperparathyroidism.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with a history of fragility fracture.\n- Bone mass measurement is considered reasonable and necessary for estrogen-deficient women at clinical risk for osteoporosis."
+   },
+   {
+    "heading": "Medical Necessity Criteria",
+    "text": "The beneficiary must meet each of the following criteria:\n1. The beneficiary is at least 60 years of age.\n2. The treating practitioner expects measurable improvement within a predictable period.\n3. The beneficiary has a documented diagnosis of osteoporosis."
+   },
+   {
+    "heading": "Limitations and Exclusions",
+    "text": "The following limitations apply:\n1. Bone mass measurement is not covered when performed only to confirm a prior result from a different modality.\n2. Peripheral bone density testing used only for screening is not covered.\n3. Bone mass measurement is not covered for beneficiaries without a qualifying risk factor."
+   },
+   {
+    "heading": "Frequency and Duration",
+    "text": "The following frequency and duration limits apply:\nBone mass measurement is limited to 1 scan every 23 months."
+   },
+   {
+    "heading": "Documentation Requirements",
+    "text": "The medical record must support the medical necessity of each service.\nWhen bone mass measurement continues beyond the initial period, the record must document measurable improvement. Documentation must identify the practitioner who performed or supervised each scan. Progress notes must document the beneficiary's response to each scan."
+   },
+   {
+    "heading": "Practitioner Qualifications and Supervision",
+    "text": "The following qualifications apply:\nFacilities furnishing bone mass measurement must maintain written protocols for emergency response. The interpreting practitioner must be board certified in radiology. Bone mass measurement must be furnished under personal supervision of a physician."
+   },
+   {
+    "heading": "ICD-10-CM Codes that Support Medical Necessity",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n- E28.310 - Symptomatic premature menopause\n- M81.0 - Age-related osteoporosis without current pathological fracture\n- Z79.52 - Long term (current) use of systemic steroids\n- Z87.310 - Personal history of (healed) osteoporosis fracture"
+   },
+   {
+    "heading": "Billing Instructions",
+    "text": "1. Claims submitted without the ordering practitioner's National Provider Identifier will be rejected.\n2. Services must be billed with the place of service code that reflects where the scan was furnished."
+   },
+   {
+    "heading": "Sources of Information",
+    "text": "- Fictional Society of Radiology. Clinical practice guideline for osteoporosis. 2021 edition.\n- Example Journal of Radiology. Outcomes of bone mass measurement in older adults. 2014."
+   },
+   {
+    "heading": "Policy Contact",
+    "text": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0134-3569."
+   }
+  ],
+  "content_hash": null
+ },
+ "new": {
+  "doc_id": "SYN-L91594",
+  "title": "Bone Mass Measurement (DXA) (Synthetic)",
+  "version": "10",
+  "doc_type": "LCD",
+  "status": "Currently in Effect",
+  "contractor": "Fictional MAC Jurisdiction D",
+  "original_effective_date": null,
+  "revision_effective_date": "05/12/2022",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Indications for Coverage",
+    "text": "Bone mass measurement is covered when the requirements of this policy are met.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with primary hyperparathyroidism.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with a history of fragility fracture.\n- Bone mass measurement is considered reasonable and necessary for estrogen-deficient women at clinical risk for osteoporosis."
+   },
+   {
+    "heading": "Medical Necessity Criteria",
+    "text": "The beneficiary must meet each of the following criteria:\n1. The ordering practitioner is treating the beneficiary for a condition that affects bone density.\n2. The beneficiary is at least 60 years of age.\n3. The treating practitioner expects measurable improvement within a predictable period.\n4. The beneficiary has a documented diagnosis of osteoporosis."
+   },
+   {
+    "heading": "Limitations and Exclusions",
+    "text": "The following limitations apply:\n1. Bone mass measurement is not covered when performed only to confirm a prior result from a different modality.\n2. Peripheral bone density testing used only for screening is not covered.\n3. Bone mass measurement is not covered for beneficiaries without a qualifying risk factor."
+   },
+   {
+    "heading": "Frequency and Duration",
+    "text": "The following frequency and duration limits apply:\nBone mass measurement is limited to 1 scan every 23 months."
+   },
+   {
+    "heading": "Documentation Requirements",
+    "text": "The medical record must support the medical necessity of each service.\nWhen bone mass measurement continues beyond the initial period, the record must document measurable improvement. Documentation must identify the practitioner who performed or supervised each scan. Progress notes must document the beneficiary's response to each scan. The record must include a signed attestation that the beneficiary received education about bone mass measurement."
+   },
+   {
+    "heading": "Practitioner Qualifications and Supervision",
+    "text": "The following qualifications apply:\nFacilities furnishing bone mass measurement must maintain written protocols for emergency response. The interpreting practitioner must be board certified in radiology. Bone mass measurement must be furnished under personal supervision of a physician."
+   },
+   {
+    "heading": "ICD-10-CM Codes that Support Medical Necessity",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n- E28.310 - Symptomatic premature menopause\n- M81.0 - Age-related osteoporosis without current pathological fracture\n- Z79.52 - Long term (current) use of systemic steroids\n- Z87.310 - Personal history of (healed) osteoporosis fracture"
+   },
+   {
+    "heading": "Billing Instructions",
+    "text": "1. Claims submitted without the ordering practitioner's National Provider Identifier will be rejected.\n2. Services must be billed with the place of service code that reflects where the scan was furnished."
+   },
+   {
+    "heading": "Sources of Information",
+    "text": "- Fictional Society of Radiology. Clinical practice guideline for osteoporosis. 2021 edition.\n- Example Journal of Radiology. Outcomes of bone mass measurement in older adults. 2014."
+   },
+   {
+    "heading": "Policy Contact",
+    "text": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0134-3569."
+   }
+  ],
+  "content_hash": null
+ },
+ "target": {
+  "document_id": "SYN-L91594",
+  "change_classification": "clinical_criteria",
+  "is_substantive": true,
+  "change_summary": "A new eligibility criterion was added, which narrows who qualifies for bone mass measurement. A new documentation requirement was added.",
+  "changed_sections": [
+   "Medical Necessity Criteria",
+   "Documentation Requirements"
+  ],
+  "findings": [
+   {
+    "section": "Medical Necessity Criteria",
+    "change_type": "added",
+    "category": "clinical_criteria",
+    "what_changed": "A new eligibility criterion was added, which narrows who qualifies for bone mass measurement.",
+    "evidence_old": null,
+    "evidence_new": "The ordering practitioner is treating the beneficiary for a condition that affects bone density.",
+    "impact_areas": [
+     "patient_eligibility",
+     "provider_workflow"
+    ],
+    "potential_operational_impact": "Some beneficiaries who previously qualified may no longer meet the criteria, and staff will need to confirm the new criterion before services begin.",
+    "recommended_action": "Add the new criterion to eligibility screening and order templates and review active patients for continued eligibility.",
+    "confidence": "high",
+    "requires_verification": true
+   },
+   {
+    "section": "Documentation Requirements",
+    "change_type": "added",
+    "category": "documentation",
+    "what_changed": "A new documentation requirement was added.",
+    "evidence_old": null,
+    "evidence_new": "The record must include a signed attestation that the beneficiary received education about bone mass measurement.",
+    "impact_areas": [
+     "documentation",
+     "compliance",
+     "provider_workflow"
+    ],
+    "potential_operational_impact": "Clinical staff may need to capture additional information, and claims lacking it could be denied on medical review.",
+    "recommended_action": "Add the requirement to EHR templates and pre-billing documentation audits.",
+    "confidence": "high",
+    "requires_verification": true
+   }
+  ],
+  "abstain": false,
+  "limitations": [
+   "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance."
+  ]
+ },
+ "target_source": "scenario_spec",
+ "generator_version": "synth-1.0",
+ "seed": 202,
+ "validation_status": "auto_validated",
+ "validation_errors": [],
+ "training_eligible": true,
+ "created_at": "2026-10-12T16:50:34+00:00"
+}

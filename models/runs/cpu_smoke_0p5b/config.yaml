@@ -1,0 +1,24 @@
+base_model: Qwen/Qwen2.5-0.5B-Instruct
+device: cpu
+dtype: float32
+grad_accum: 4
+gradient_checkpointing: true
+learning_rate: 0.0002
+limit_train: 64
+limit_val: 8
+lora_alpha: 32
+lora_dropout: 0.05
+lora_r: 16
+max_seq_len: 2048
+max_steps: 8
+num_threads: 4
+output_dir: models/runs/cpu_smoke_0p5b
+seed: 13
+target_modules:
+- q_proj
+- k_proj
+- v_proj
+- o_proj
+train_file: data/training/final/train.jsonl
+val_file: data/training/final/val.jsonl
+warmup_ratio: 0.1

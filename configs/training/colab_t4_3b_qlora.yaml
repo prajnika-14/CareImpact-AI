@@ -1,0 +1,24 @@
+# Larger candidate on a T4 with 4-bit QLoRA (bitsandbytes, CUDA only).
+# Note: Qwen2.5-3B is released under the Qwen Research License (non-commercial),
+# unlike the Apache-2.0 0.5B/1.5B/7B variants. Fine for coursework; check before reuse.
+base_model: Qwen/Qwen2.5-3B-Instruct
+train_file: data/training/final/train.jsonl
+val_file: data/training/final/val.jsonl
+output_dir: models/runs/colab_3b_qlora
+limit_val: 60
+max_seq_len: 2048
+epochs: 2
+grad_accum: 8
+learning_rate: 1.5e-4
+warmup_ratio: 0.05
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+gradient_checkpointing: true
+load_in_4bit: true
+eval_every: 25
+save_every: 50
+device: cuda
+dtype: float16
+seed: 13

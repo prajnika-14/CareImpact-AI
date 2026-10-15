@@ -1,0 +1,208 @@
+{
+ "example_id": "demo-retirement_replacement",
+ "data_origin": "synthetic",
+ "family": "bone_density",
+ "scenario": "retirement_replacement",
+ "old": {
+  "doc_id": "SYN-L99433",
+  "title": "Bone Mass Measurement (DXA) (Synthetic)",
+  "version": "9",
+  "doc_type": "LCD",
+  "status": "Superseded",
+  "contractor": "Fictional MAC Jurisdiction G",
+  "original_effective_date": null,
+  "revision_effective_date": "05/01/2022",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications",
+    "text": "This section describes the indications for which bone mass measurement may be covered.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with a history of fragility fracture.\n- Bone mass measurement is considered reasonable and necessary for estrogen-deficient women at clinical risk for osteoporosis.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with primary hyperparathyroidism.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with vertebral abnormalities on imaging."
+   },
+   {
+    "heading": "Eligibility Criteria",
+    "text": "Coverage requires that all of the following criteria are met:\nThe results will be used to guide treatment decisions. The beneficiary has a documented diagnosis of osteoporosis. The treating practitioner expects measurable improvement within a predictable period. The beneficiary is at least 50 years of age."
+   },
+   {
+    "heading": "Limitations and Exclusions",
+    "text": "The following limitations apply:\n- Peripheral bone density testing used only for screening is not covered.\n- Testing more often than the frequency limit is not covered without documented medical necessity."
+   },
+   {
+    "heading": "Frequency and Duration",
+    "text": "Bone mass measurement is limited to 1 scan every 24 months."
+   },
+   {
+    "heading": "Clinical Evidence Required for Coverage",
+    "text": "The following clinical evidence is required:\nResults of dual-energy x-ray absorptiometry obtained within 18 months before the initial scan must be available."
+   },
+   {
+    "heading": "Documentation Requirements for the Medical Record",
+    "text": "The following documentation must be available upon request:\n1. Documentation must state the clinical reason any scan was missed or discontinued.\n2. The treating practitioner must document a face-to-face evaluation within 30 days before the initial scan.\n3. The medical record must contain a signed and dated order for bone mass measurement from the treating practitioner.\n4. A plan of care that specifies goals, frequency and expected duration must be on file before bone mass measurement begins."
+   },
+   {
+    "heading": "Practitioner Qualifications and Supervision",
+    "text": "The following qualifications apply:\n1. Facilities furnishing bone mass measurement must maintain written protocols for emergency response.\n2. Staff furnishing bone mass measurement must hold current basic life support certification.\n3. Bone mass measurement must be furnished under personal supervision of a physician."
+   },
+   {
+    "heading": "Covered Diagnosis Codes (ICD-10-CM)",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n- E21.3 - Hyperparathyroidism, unspecified\n- E28.310 - Symptomatic premature menopause\n- Z79.52 - Long term (current) use of systemic steroids"
+   },
+   {
+    "heading": "Billing and Coding Guidelines",
+    "text": "The following billing instructions apply:\nServices that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected. Services must be billed with the place of service code that reflects where the scan was furnished."
+   },
+   {
+    "heading": "Summary of Evidence and Rationale",
+    "text": "Published studies report improvements in fracture risk assessment among beneficiaries receiving bone mass measurement. Studies with longer follow-up show that benefits decline without continued adherence."
+   },
+   {
+    "heading": "Implementation",
+    "text": "The requirements of this policy apply to services performed on or after 02/01/2020."
+   },
+   {
+    "heading": "Sources of Information",
+    "text": "- Fictional Society of Radiology. Clinical practice guideline for osteoporosis. 2014 edition.\n- Synthetic Evidence Review Group. Systematic review of bone mass measurement outcomes. 2021."
+   }
+  ],
+  "content_hash": null
+ },
+ "new": {
+  "doc_id": "SYN-L99433",
+  "title": "Bone Mass Measurement (DXA) (Synthetic)",
+  "version": "10",
+  "doc_type": "LCD",
+  "status": "Retired",
+  "contractor": "Fictional MAC Jurisdiction G",
+  "original_effective_date": null,
+  "revision_effective_date": "09/23/2023",
+  "revision_ending_date": null,
+  "retirement_date": "09/01/2024",
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Retirement and Replacement",
+    "text": "This policy is retired effective 09/01/2024. Services previously addressed by this policy are addressed by SYN-L93947, Bone Mass Measurement (DXA) (Consolidated)."
+   },
+   {
+    "heading": "Coverage Indications",
+    "text": "This section describes the indications for which bone mass measurement may be covered.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with a history of fragility fracture.\n- Bone mass measurement is considered reasonable and necessary for estrogen-deficient women at clinical risk for osteoporosis.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with primary hyperparathyroidism.\n- Bone mass measurement is considered reasonable and necessary for beneficiaries with vertebral abnormalities on imaging."
+   },
+   {
+    "heading": "Eligibility Criteria",
+    "text": "Coverage requires that all of the following criteria are met:\nThe results will be used to guide treatment decisions. The beneficiary has a documented diagnosis of osteoporosis. The treating practitioner expects measurable improvement within a predictable period. The beneficiary is at least 60 years of age."
+   },
+   {
+    "heading": "Limitations and Exclusions",
+    "text": "The following limitations apply:\n- Peripheral bone density testing used only for screening is not covered.\n- Testing more often than the frequency limit is not covered without documented medical necessity."
+   },
+   {
+    "heading": "Frequency and Duration",
+    "text": "Bone mass measurement is limited to 1 scan every 24 months."
+   },
+   {
+    "heading": "Clinical Evidence Required for Coverage",
+    "text": "The following clinical evidence is required:\nResults of dual-energy x-ray absorptiometry obtained within 18 months before the initial scan must be available."
+   },
+   {
+    "heading": "Documentation Requirements for the Medical Record",
+    "text": "The following documentation must be available upon request:\n1. Documentation must state the clinical reason any scan was missed or discontinued.\n2. The treating practitioner must document a face-to-face evaluation within 30 days before the initial scan.\n3. The medical record must contain a signed and dated order for bone mass measurement from the treating practitioner.\n4. A plan of care that specifies goals, frequency and expected duration must be on file before bone mass measurement begins."
+   },
+   {
+    "heading": "Practitioner Qualifications and Supervision",
+    "text": "The following qualifications apply:\n1. Facilities furnishing bone mass measurement must maintain written protocols for emergency response.\n2. Staff furnishing bone mass measurement must hold current basic life support certification.\n3. Bone mass measurement must be furnished under personal supervision of a physician."
+   },
+   {
+    "heading": "Covered Diagnosis Codes (ICD-10-CM)",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n- E21.3 - Hyperparathyroidism, unspecified\n- E28.310 - Symptomatic premature menopause\n- Z79.52 - Long term (current) use of systemic steroids"
+   },
+   {
+    "heading": "Billing and Coding Guidelines",
+    "text": "The following billing instructions apply:\nServices that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected. Services must be billed with the place of service code that reflects where the scan was furnished."
+   },
+   {
+    "heading": "Summary of Evidence and Rationale",
+    "text": "Published studies report improvements in fracture risk assessment among beneficiaries receiving bone mass measurement. Studies with longer follow-up show that benefits decline without continued adherence."
+   },
+   {
+    "heading": "Implementation",
+    "text": "The requirements of this policy apply to services performed on or after 02/01/2020."
+   },
+   {
+    "heading": "Sources of Information",
+    "text": "- Fictional Society of Radiology. Clinical practice guideline for osteoporosis. 2014 edition.\n- Synthetic Evidence Review Group. Systematic review of bone mass measurement outcomes. 2021."
+   }
+  ],
+  "content_hash": null
+ },
+ "target": {
+  "document_id": "SYN-L99433",
+  "change_classification": "retirement_replacement",
+  "is_substantive": true,
+  "change_summary": "The policy is retired and replaced by SYN-L93947. The minimum age threshold changed from 50 to 60, making the criterion more restrictive.",
+  "changed_sections": [
+   "Retirement and Replacement",
+   "Eligibility Criteria"
+  ],
+  "findings": [
+   {
+    "section": "Retirement and Replacement",
+    "change_type": "added",
+    "category": "retirement_replacement",
+    "what_changed": "The policy is retired and replaced by SYN-L93947.",
+    "evidence_old": null,
+    "evidence_new": "This policy is retired effective 09/01/2024.",
+    "impact_areas": [
+     "compliance",
+     "billing",
+     "provider_workflow"
+    ],
+    "potential_operational_impact": "Coverage rules for bone mass measurement will come from the replacement policy, which may have different requirements.",
+    "recommended_action": "Obtain and compare the replacement policy before the retirement date, and update references in workflows and claim edits.",
+    "confidence": "high",
+    "requires_verification": true
+   },
+   {
+    "section": "Eligibility Criteria",
+    "change_type": "modified",
+    "category": "clinical_criteria",
+    "what_changed": "The minimum age threshold changed from 50 to 60, making the criterion more restrictive.",
+    "evidence_old": "The beneficiary is at least 50 years of age.",
+    "evidence_new": "The beneficiary is at least 60 years of age.",
+    "impact_areas": [
+     "patient_eligibility"
+    ],
+    "potential_operational_impact": "Fewer beneficiaries may qualify, and patients near the previous threshold may no longer meet coverage criteria.",
+    "recommended_action": "Update eligibility screening to the new threshold and review borderline cases against the official policy.",
+    "confidence": "high",
+    "requires_verification": true
+   }
+  ],
+  "abstain": false,
+  "limitations": [
+   "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+   "The replacement policy text was not supplied, so its requirements could not be compared."
+  ]
+ },
+ "target_source": "scenario_spec",
+ "generator_version": "synth-1.0",
+ "seed": 505,
+ "validation_status": "auto_validated",
+ "validation_errors": [],
+ "training_eligible": true,
+ "created_at": "2026-10-12T16:50:34+00:00"
+}

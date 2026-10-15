@@ -1,0 +1,138 @@
+{
+ "example_id": "demo-billing_article_reference",
+ "data_origin": "synthetic",
+ "family": "hyperbaric_oxygen",
+ "scenario": "billing_article_reference",
+ "old": {
+  "doc_id": "SYN-L93612",
+  "title": "Hyperbaric Oxygen Therapy (Synthetic)",
+  "version": "6",
+  "doc_type": "LCD",
+  "status": "Superseded",
+  "contractor": "Fictional MAC Jurisdiction B",
+  "original_effective_date": null,
+  "revision_effective_date": "09/01/2023",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "text": "Coverage Indications\nHyperbaric oxygen therapy is covered when the requirements of this policy are met.\n1. Coverage of hyperbaric oxygen therapy is provided for beneficiaries with acute carbon monoxide poisoning.\n2. Coverage of hyperbaric oxygen therapy is provided for beneficiaries with compromised skin grafts or flaps.\n3. Coverage of hyperbaric oxygen therapy is provided for beneficiaries with decompression illness.\nPatient Selection Criteria\nThe beneficiary must meet each of the following criteria:\n1. The wound is classified as Wagner grade 2 or higher.\n2. The beneficiary has been evaluated in person by the treating practitioner within the past 90 days.\n3. Conservative treatment has been tried and has not produced adequate improvement.\n4. The beneficiary is able to understand and participate in the plan of care.\nNon-Covered Services\nThe following are not considered reasonable and necessary:\n1. Treatment for chronic peripheral vascular insufficiency alone is not covered.\n2. Hyperbaric oxygen therapy is not covered for acute cerebral edema.\n3. Topical oxygen applied to the wound is not covered as hyperbaric oxygen therapy.\nPractitioner Qualifications and Supervision\nThe performing practitioner must have documented training and experience in hyperbaric oxygen therapy. The interpreting practitioner must be board certified in undersea and hyperbaric medicine."
+   },
+   {
+    "heading": "Associated Information",
+    "text": "Utilization Guidelines\nThe following frequency and duration limits apply:\nHyperbaric oxygen therapy is limited to 30 treatments within a 30-day period.\nDocumentation Requirements for the Medical Record\nThe following documentation must be available upon request:\n1. When hyperbaric oxygen therapy continues beyond the initial period, the record must document measurable improvement.\n2. The treating practitioner must document a face-to-face evaluation within 30 days before the initial treatment.\n3. Documentation must describe prior treatments attempted and the outcome of each."
+   },
+   {
+    "heading": "ICD-10-CM Codes that Support Medical Necessity",
+    "text": "The following ICD-10-CM codes support medical necessity for hyperbaric oxygen therapy:\n1. E11.621 - Type 2 diabetes mellitus with foot ulcer\n2. M27.8 - Other specified diseases of jaws\n3. T70.3XXA - Caisson disease [decompression sickness], initial encounter"
+   },
+   {
+    "heading": "Billing Instructions",
+    "text": "The following billing instructions apply:\nReport one unit of service for each treatment furnished. Services must be billed with the place of service code that reflects where the treatment was furnished. Services that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected. Report the date of the initial treatment on the claim."
+   },
+   {
+    "heading": "References",
+    "text": "Fictional Society of Undersea and Hyperbaric Medicine. Clinical practice guideline for hypoxic wounds and related conditions. 2019 edition."
+   },
+   {
+    "heading": "Contractor Contact Information",
+    "text": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0177-5860."
+   }
+  ],
+  "content_hash": null
+ },
+ "new": {
+  "doc_id": "SYN-L93612",
+  "title": "Hyperbaric Oxygen Therapy (Synthetic)",
+  "version": "7",
+  "doc_type": "LCD",
+  "status": "Currently in Effect",
+  "contractor": "Fictional MAC Jurisdiction B",
+  "original_effective_date": null,
+  "revision_effective_date": "01/17/2025",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "text": "Coverage Indications\nHyperbaric oxygen therapy is covered when the requirements of this policy are met.\n1. Coverage of hyperbaric oxygen therapy is provided for beneficiaries with acute carbon monoxide poisoning.\n2. Coverage of hyperbaric oxygen therapy is provided for beneficiaries with compromised skin grafts or flaps.\n3. Coverage of hyperbaric oxygen therapy is provided for beneficiaries with decompression illness.\nPatient Selection Criteria\nThe beneficiary must meet each of the following criteria:\n1. The wound is classified as Wagner grade 2 or higher.\n2. The beneficiary has been evaluated in person by the treating practitioner within the past 90 days.\n3. Conservative treatment has been tried and has not produced adequate improvement.\n4. The beneficiary is able to understand and participate in the plan of care.\nNon-Covered Services\nThe following are not considered reasonable and necessary:\n1. Treatment for chronic peripheral vascular insufficiency alone is not covered.\n2. Hyperbaric oxygen therapy is not covered for acute cerebral edema.\n3. Topical oxygen applied to the wound is not covered as hyperbaric oxygen therapy.\nPractitioner Qualifications and Supervision\nThe performing practitioner must have documented training and experience in hyperbaric oxygen therapy. The interpreting practitioner must be board certified in undersea and hyperbaric medicine."
+   },
+   {
+    "heading": "Associated Information",
+    "text": "Utilization Guidelines\nThe following frequency and duration limits apply:\nHyperbaric oxygen therapy is limited to 30 treatments within a 30-day period.\nDocumentation Requirements for the Medical Record\nThe following documentation must be available upon request:\n1. When hyperbaric oxygen therapy continues beyond the initial period, the record must document measurable improvement.\n2. The treating practitioner must document a face-to-face evaluation within 30 days before the initial treatment.\n3. Documentation must describe prior treatments attempted and the outcome of each."
+   },
+   {
+    "heading": "ICD-10-CM Codes that Support Medical Necessity",
+    "text": "Refer to the related Billing and Coding Article SYN-A54301 for the ICD-10-CM codes that support medical necessity."
+   },
+   {
+    "heading": "Billing Instructions",
+    "text": "The following billing instructions apply:\nReport one unit of service for each treatment furnished. Services must be billed with the place of service code that reflects where the treatment was furnished. Services that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected. Report the date of the initial treatment on the claim."
+   },
+   {
+    "heading": "References",
+    "text": "Fictional Society of Undersea and Hyperbaric Medicine. Clinical practice guideline for hypoxic wounds and related conditions. 2019 edition."
+   },
+   {
+    "heading": "Contractor Contact Information",
+    "text": "Inquiries may be submitted to the fictional contractor medical review department at (555) 0177-5860."
+   }
+  ],
+  "content_hash": null
+ },
+ "target": {
+  "document_id": "SYN-L93612",
+  "change_classification": "coding_billing",
+  "is_substantive": true,
+  "change_summary": "The diagnosis code list was removed from the policy and replaced with a reference to a related Billing and Coding Article.",
+  "changed_sections": [
+   "ICD-10-CM Codes that Support Medical Necessity"
+  ],
+  "findings": [
+   {
+    "section": "ICD-10-CM Codes that Support Medical Necessity",
+    "change_type": "modified",
+    "category": "coding_billing",
+    "what_changed": "The diagnosis code list was removed from the policy and replaced with a reference to a related Billing and Coding Article.",
+    "evidence_old": "E11.621 - Type 2 diabetes mellitus with foot ulcer",
+    "evidence_new": "Refer to the related Billing and Coding Article SYN-A54301 for the ICD-10-CM codes that support medical necessity.",
+    "impact_areas": [
+     "billing"
+    ],
+    "potential_operational_impact": "Coding staff will need the referenced article to determine which diagnosis codes are supported.",
+    "recommended_action": "Obtain Billing and Coding Article SYN-A54301 and compare its code list with the previous list before updating claim edits.",
+    "confidence": "medium",
+    "requires_verification": true
+   }
+  ],
+  "abstain": false,
+  "limitations": [
+   "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+   "The related Billing and Coding Article was not supplied, so it is unknown whether the supported codes changed."
+  ]
+ },
+ "target_source": "scenario_spec",
+ "generator_version": "synth-1.0",
+ "seed": 303,
+ "validation_status": "auto_validated",
+ "validation_errors": [],
+ "training_eligible": true,
+ "created_at": "2026-10-12T16:50:34+00:00"
+}

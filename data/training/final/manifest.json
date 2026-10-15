@@ -1,0 +1,67 @@
+{
+  "prompt_version": "v1",
+  "config": {
+    "seed": 13,
+    "max_per_scenario": 120,
+    "max_synthetic_per_real": 8,
+    "real_test_fraction": 0.3,
+    "real_val_fraction": 0.1
+  },
+  "train": 1000,
+  "val": 120,
+  "train_synthetic": 1000,
+  "train_real": 0,
+  "val_synthetic": 120,
+  "val_real": 0,
+  "real_test": 0,
+  "synthetic_test": 240,
+  "train_by_classification": {
+    "coverage": 205,
+    "clinical_criteria": 184,
+    "no_substantive_change": 91,
+    "provider_requirements": 77,
+    "coding_billing": 124,
+    "insufficient_evidence": 50,
+    "documentation": 123,
+    "retirement_replacement": 45,
+    "administrative": 101
+  },
+  "train_by_scenario": {
+    "treatment_duration": 46,
+    "threshold_change": 46,
+    "removed_coverage_indication": 46,
+    "no_substantive_change": 91,
+    "provider_qualifications": 46,
+    "diagnosis_codes": 44,
+    "ambiguous_evidence": 92,
+    "new_limitation": 45,
+    "retirement_replacement": 45,
+    "billing_instructions": 45,
+    "administrative_edit": 46,
+    "removed_documentation": 46,
+    "billing_article_reference": 45,
+    "added_documentation": 45,
+    "effective_date_revision": 44,
+    "supervision_requirements": 46,
+    "narrowed_eligibility": 46,
+    "new_coverage_indication": 45,
+    "expanded_eligibility": 46,
+    "evidence_requirements": 45
+  },
+  "leakage_check": "passed",
+  "train_families": [
+    "cardiac_rehab",
+    "epidural_steroid",
+    "home_oxygen",
+    "outpatient_pt_lbp",
+    "pulmonary_rehab",
+    "skin_substitutes",
+    "sleep_apnea_pap",
+    "vitamin_d_testing"
+  ],
+  "test_families": [
+    "bone_density",
+    "hyperbaric_oxygen",
+    "tms"
+  ]
+}

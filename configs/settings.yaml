@@ -1,0 +1,19 @@
+# CareImpact AI runtime settings. Environment variables CAREIMPACT_<KEY> override these.
+ollama_url: http://localhost:11434
+ollama_model: careimpact-ft
+ollama_timeout_s: 300
+ollama_num_ctx: 4096
+
+# Polite crawling of official CMS sources
+http_min_interval_s: 1.5
+http_timeout_s: 40
+http_max_retries: 4
+user_agent: "CareImpactAI-research/0.1 (student project; polite crawler)"
+
+# The CMS Coverage API data endpoints (e.g. revision history) require accepting
+# the AMA/ADA/AHA license terms returned by /v1/metadata/license-agreement.
+# Read them, then set this to true if you accept (personal, non-commercial use).
+accept_cms_api_license: false
+
+# Long sections are shown to the model as changed sentences with context.
+prompt_max_section_chars: 1800

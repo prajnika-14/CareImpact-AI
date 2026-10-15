@@ -1,0 +1,131 @@
+{
+ "example_id": "demo-ambiguous_evidence",
+ "data_origin": "synthetic",
+ "family": "hyperbaric_oxygen",
+ "scenario": "ambiguous_evidence",
+ "old": {
+  "doc_id": "SYN-L91383",
+  "title": "Hyperbaric Oxygen Therapy (Synthetic)",
+  "version": "1",
+  "doc_type": "LCD",
+  "status": "Superseded",
+  "contractor": "Fictional MAC Jurisdiction K",
+  "original_effective_date": null,
+  "revision_effective_date": "04/01/2019",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "text": "Covered Indications\nThis section describes the indications for which hyperbaric oxygen therapy may be covered.\n- Hyperbaric oxygen therapy may be covered for beneficiaries with chronic refractory osteomyelitis.\n- Hyperbaric oxygen therapy may be covered for beneficiaries with acute carbon monoxide poisoning.\n- Hyperbaric oxygen therapy may be covered for beneficiaries with compromised skin grafts or flaps.\nPatient Selection Criteria\nThe beneficiary must meet each of the following criteria:\n1. The treating practitioner expects measurable improvement within a predictable period.\n2. The wound is classified as Wagner grade 4 or higher.\n3. The beneficiary has been evaluated in person by the treating practitioner within the past 90 days.\nLimitations and Exclusions\nThe following are not considered reasonable and necessary:\n- Hyperbaric oxygen therapy is not covered for acute cerebral edema.\n- Treatment continued without measurable signs of healing after 30 days is not covered.\n- Treatment for chronic peripheral vascular insufficiency alone is not covered.\nClinical Evidence Required for Coverage\nResults of transcutaneous oxygen measurement obtained within 12 months before the initial treatment must be available.\nPractitioner Qualifications and Supervision\n1. The ordering practitioner must be enrolled in Medicare.\n2. Staff furnishing hyperbaric oxygen therapy must hold current basic life support certification.\n3. Hyperbaric oxygen therapy must be furnished under personal supervision of a physician."
+   },
+   {
+    "heading": "Associated Information",
+    "text": "Frequency and Duration\nThe following frequency and duration limits apply:\nHyperbaric oxygen therapy is limited to 30 treatments within a 30-day period.\nDocumentation Requirements\nThe medical record must support the medical necessity of each service.\n1. The treating practitioner must document a face-to-face evaluation within 30 days before the initial treatment.\n2. Results of transcutaneous oxygen measurement relied upon to establish medical necessity must be available in the medical record.\n3. The medical record must include the diagnosis that supports medical necessity.\n4. Documentation must identify the practitioner who performed or supervised each treatment."
+   },
+   {
+    "heading": "Covered Diagnosis Codes (ICD-10-CM)",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n1. E10.621 - Type 1 diabetes mellitus with foot ulcer\n2. E11.621 - Type 2 diabetes mellitus with foot ulcer\n3. M27.8 - Other specified diseases of jaws\n4. T58.01XA - Toxic effect of carbon monoxide from motor vehicle exhaust, accidental (unintentional), initial encounter"
+   },
+   {
+    "heading": "Billing Instructions",
+    "text": "The following billing instructions apply:\nClaims submitted without the ordering practitioner's National Provider Identifier will be rejected. Services that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected. Claims for hyperbaric oxygen therapy furnished on the same date of service by the same provider should be combined on a single claim line. The ICD-10-CM code that supports medical necessity must be reported on the claim."
+   },
+   {
+    "heading": "References",
+    "text": "- Synthetic Evidence Review Group. Systematic review of hyperbaric oxygen therapy outcomes. 2022.\n- Example Journal of Undersea and Hyperbaric Medicine. Outcomes of hyperbaric oxygen therapy in older adults. 2020."
+   }
+  ],
+  "content_hash": null
+ },
+ "new": {
+  "doc_id": "SYN-L91383",
+  "title": "Hyperbaric Oxygen Therapy (Synthetic)",
+  "version": "2",
+  "doc_type": "LCD",
+  "status": "Currently in Effect",
+  "contractor": "Fictional MAC Jurisdiction K",
+  "original_effective_date": null,
+  "revision_effective_date": "06/14/2019",
+  "revision_ending_date": null,
+  "retirement_date": null,
+  "source_url": null,
+  "retrieved_at": null,
+  "data_origin": "synthetic",
+  "verification_status": "verified",
+  "verification_notes": [
+   "Synthetic fictional policy generated from a scenario specification; not CMS guidance."
+  ],
+  "related_documents": [],
+  "sections": [
+   {
+    "heading": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "text": "Covered Indications\nThis section describes the indications for which hyperbaric oxygen therapy may be covered.\n- Hyperbaric oxygen therapy may be covered for beneficiaries with chronic refractory osteomyelitis.\n- Hyperbaric oxygen therapy may be covered for beneficiaries with acute carbon monoxide poisoning.\n- Hyperbaric oxygen therapy may be covered for beneficiaries with compromised skin grafts or flaps.\nPatient Selection Criteria\nThe beneficiary must meet each of the following criteria:\n1. The treating practitioner expects measurable improvement within a predictable period.\n2. The wound is classified as Wagner grade 4 or higher.\n3. The beneficiary has been evaluated in person by the treating practitioner within the past 90 days.\nLimitations and Exclusions\nThe following are not considered reasonable and necessary:\n- Hyperbaric oxygen therapy is not covered for acute cerebral edema.\n- Treatment continued without measurable signs of healing after 30 days is not covered.\n- Hyperbaric oxygen therapy is limited to 40 treatments under this policy.\n- Treatment for chronic peripheral vascular insufficiency alone is not covered.\nClinical Evidence Required for Coverage\nResults of transcutaneous oxygen measurement obtained within 12 months before the initial treatment must be available.\nPractitioner Qualifications and Supervision\n1. The ordering practitioner must be enrolled in Medicare.\n2. Staff furnishing hyperbaric oxygen therapy must hold current basic life support certification.\n3. Hyperbaric oxygen therapy must be furnished under personal supervision of a physician."
+   },
+   {
+    "heading": "Associated Information",
+    "text": "Frequency and Duration\nThe following frequency and duration limits apply:\nHyperbaric oxygen therapy is limited to 30 treatments within a 30-day period.\nDocumentation Requirements\nThe medical record must support the medical necessity of each service.\n1. The treating practitioner must document a face-to-face evaluation within 30 days before the initial treatment.\n2. Results of transcutaneous oxygen measurement relied upon to establish medical necessity must be available in the medical record.\n3. The medical record must include the diagnosis that supports medical necessity.\n4. Documentation must identify the practitioner who performed or supervised each treatment."
+   },
+   {
+    "heading": "Covered Diagnosis Codes (ICD-10-CM)",
+    "text": "Claims must include one of the following ICD-10-CM codes:\n1. E10.621 - Type 1 diabetes mellitus with foot ulcer\n2. E11.621 - Type 2 diabetes mellitus with foot ulcer\n3. M27.8 - Other specified diseases of jaws\n4. T58.01XA - Toxic effect of carbon monoxide from motor vehicle exhaust, accidental (unintentional), initial encounter"
+   },
+   {
+    "heading": "Billing Instructions",
+    "text": "The following billing instructions apply:\nClaims submitted without the ordering practitioner's National Provider Identifier will be rejected. Services that do not meet the criteria in this policy should be reported with the modifier indicating that denial is expected. Claims for hyperbaric oxygen therapy furnished on the same date of service by the same provider should be combined on a single claim line. The ICD-10-CM code that supports medical necessity must be reported on the claim."
+   },
+   {
+    "heading": "References",
+    "text": "- Synthetic Evidence Review Group. Systematic review of hyperbaric oxygen therapy outcomes. 2022.\n- Example Journal of Undersea and Hyperbaric Medicine. Outcomes of hyperbaric oxygen therapy in older adults. 2020."
+   }
+  ],
+  "content_hash": null
+ },
+ "target": {
+  "document_id": "SYN-L91383",
+  "change_classification": "insufficient_evidence",
+  "is_substantive": false,
+  "change_summary": "The new version adds a limit that conflicts with another limit in the same policy, so the applicable requirement is unclear.",
+  "changed_sections": [
+   "Coverage Indications, Limitations, and/or Medical Necessity"
+  ],
+  "findings": [
+   {
+    "section": "Coverage Indications, Limitations, and/or Medical Necessity",
+    "change_type": "added",
+    "category": "coverage",
+    "what_changed": "A new limit was added that conflicts with the utilization limit stated elsewhere in the policy.",
+    "evidence_old": null,
+    "evidence_new": "Hyperbaric oxygen therapy is limited to 40 treatments under this policy.",
+    "impact_areas": [
+     "patient_eligibility",
+     "billing"
+    ],
+    "potential_operational_impact": "The applicable limit cannot be determined from the supplied text.",
+    "recommended_action": "Do not change scheduling limits until the contractor clarifies which limit applies.",
+    "confidence": "low",
+    "requires_verification": true
+   }
+  ],
+  "abstain": true,
+  "limitations": [
+   "Operational impact is inferred from the supplied text and has not been verified against official CMS guidance.",
+   "The new version states conflicting limits (30 versus 40), so the applicable requirement cannot be determined."
+  ]
+ },
+ "target_source": "scenario_spec",
+ "generator_version": "synth-1.0",
+ "seed": 606,
+ "validation_status": "auto_validated",
+ "validation_errors": [],
+ "training_eligible": true,
+ "created_at": "2026-10-12T16:50:34+00:00"
+}

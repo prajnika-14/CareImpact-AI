@@ -1,0 +1,10 @@
+# Training-data builder configuration (python -m careimpact.cli build-dataset)
+seed: 13
+# Cap per synthetic scenario so no scenario dominates training.
+max_per_scenario: 120
+# When approved real examples exist, keep at most this many synthetic train
+# examples per real train example (null = no cap).
+max_synthetic_per_real: 8
+# Approved real examples are split by policy ID (never by version).
+real_test_fraction: 0.3
+real_val_fraction: 0.1

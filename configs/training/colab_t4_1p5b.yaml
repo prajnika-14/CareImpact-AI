@@ -1,0 +1,21 @@
+# Recommended real run: free Colab/Kaggle T4 (16 GB VRAM). Plain LoRA in fp16.
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+train_file: data/training/final/train.jsonl
+val_file: data/training/final/val.jsonl
+output_dir: models/runs/colab_1p5b_lora
+limit_val: 60
+max_seq_len: 2048
+epochs: 2
+grad_accum: 8
+learning_rate: 2.0e-4
+warmup_ratio: 0.05
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+gradient_checkpointing: true
+eval_every: 25
+save_every: 50
+device: cuda
+dtype: float16
+seed: 13
